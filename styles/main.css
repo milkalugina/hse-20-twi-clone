@@ -18,14 +18,14 @@ main {
   padding-bottom: 20vh;
 }
 
-.main--header {
+.main__header {
   display: flex;
   justify-content: space-between;
   padding: 16px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
-.main--header h2 {
+.main__header h2 {
   font-weight: bold;
   font-size: 20px;
 }
@@ -36,44 +36,44 @@ main {
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
-.story--user-ava {
+.story__user-ava {
   width: 56px;
   height: 56px;
   margin-right: 16px;
 }
 
-.story--body--header {
+.story__body__header {
   display: flex;
   align-items: center;
 
 }
 
-.story--body--header * {
+.story__body__header * {
   margin-right: 16px;
 }
 
-.story--body--header h3 {
+.story__body__header h3 {
   font-weight: bold;
   font: 20px;
 }
 
-.story--body--header a {
+.story__body__header a {
   text-decoration: none;
 }
 
-.story--body--header a,
-.story--body--header span {
+.story__body__header a,
+.story__body__header span {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.5);
 }
 
-.story--body p {
+.story__body p {
   font-size: 16px;
   line-height: 24px;
   padding-top: 8px;
 }
 
-.story--body--actions {
+.story__body__actions {
   display: flex;
   justify-content: space-between;
   margin-right: 140px;
@@ -82,12 +82,18 @@ main {
   margin-top: 16px;
 }
 
-.story--body--actions li {
+.story__body__actions li {
   position: relative;
   display: flex;
   align-items: center;
 }
-.story--body--actions--item {
+.story__body__actions__item {
   position: absolute;
   left: 28px;
+}
+
+.story__body__actions li:hover {
+  cursor: pointer;
+  filter: brightness(0.05);
+
 }

@@ -7,33 +7,43 @@
 </head>
 <body>
   <main>
-    <header>
+
+    <header class="main--header">
       <h2>Последние высказывания</h2>
       <img src="img/sort-icn.svg" alt="Иконка сортировки">
     </header>
-    <article class="">
-      <img src="img/ava-vasya.jpg" alt="Фотография пользователя">
-      <div class="">
-        <h3>Василий Ночь</h3>
-        <a href="#">@vasya.night</a>
-        <span>11 октября</span>
+
+    <article class="story">
+
+      <img src="img/ava-vasya.png" class="story--user-ava" alt="Фотография пользователя">
+
+      <div class="story--body">
+
+        <header class="story--body--header">
+          <h3>Василий Ночь</h3>
+          <a href="#">@vasya.night</a>
+          <span>11 октября</span>
+        </header>
+
         <p>Когда вы полагаете, что именно ваш самолет разобьется, или что именно ваш проект все назовут идиотским, или что именно вас все высмеют и растопчут, вы по сути говорите себе: «Я — исключение из правила, я не такой, как все остальные; я уникальный и особенный». Это чистой воды нарциссизм. Вы полагаете, что именно ваши проблемы заслуживают особого обращения, что именно ваши проблемы уникальны и не подчиняются законам физической вселенной.</p>
-        <ul>
+
+        <ul class="story--body--actions">
           <li>
             <img src="img/reply-icn.svg" alt="Иконка ответа">
           </li>
           <li>
             <img src="img/retweet-icn.svg" alt="Иконка ретвита">
-            10
+            <span class="story--body--actions--item">10</span>
           </li>
           <li>
             <img src="img/like-icn.svg" alt="Иконка одобрения">
-            32
+            <span class="story--body--actions--item">32</span>
           </li>
           <li>
             <img src="img/link-icn.svg" alt="Иконка поделиться">
           </li>
         </ul>
+
       </div>
     </article>
   </main>

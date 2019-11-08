@@ -10,18 +10,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* MENU */
+
 .menu {
   position: fixed;
-  left: calc((100vw - 600px)/2);
+  left: calc((100vw - 900px)/2);
   transform: translateX(-100%);
   padding: 24px 32px 0 0;
+}
+
+.menu_ul {
+  margin-bottom: 60px;
 }
 
 .menu ul li {
   font-weight: bold;
   font-size: 20px;
   color: #000000;
-  margin-bottom: 27px;
+  margin-bottom: 10px;
+  padding: 20px;
 }
 
 .menu a {
@@ -29,6 +36,7 @@ body {
   font-weight: bold;
   font-size: 20px;
   padding: 10px 20px 10px 20px;
+  margin-left: 20px;
 }
 
 .nav__icon {
@@ -41,16 +49,9 @@ body {
 .nav__icon--home {
   mask: url(../img/home-icn.svg);
   -webkit-mask: url(../img/home-icn.svg);
-  position: absolute;
-  margin-left: -40px;
   margin-top: -3px;
-}
-
-.menu ul li:hover {
-  color: #0038FF;
-  background-color: rgba(0, 0, 0, 0.05);
-  background-size: 30px 200px;
-  border-radius: 50px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .menu ul li:hover .nav__icon--home {
@@ -61,9 +62,9 @@ body {
 .nav__icon--bell {
   mask: url(../img/bell-icn.svg);
   -webkit-mask: url(../img/bell-icn.svg);
-  position: absolute;
-  margin-left: -40px;
   margin-top: -3px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .menu ul li:hover .nav__icon--bell {
@@ -74,9 +75,9 @@ body {
 .nav__icon--chat {
   mask: url(../img/chat-icn.svg);
   -webkit-mask: url(../img/chat-icn.svg);
-  position: absolute;
-  margin-left: -40px;
   margin-top: -3px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .menu ul li:hover .nav__icon--chat {
@@ -87,14 +88,27 @@ body {
 .nav__icon--bookmark {
   mask: url(../img/bookmark-icn.svg);
   -webkit-mask: url(../img/bookmark-icn.svg);
-  position: absolute;
-  margin-left: -40px;
   margin-top: -3px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .menu ul li:hover .nav__icon--bookmark {
   background: #0038FF;
   cursor: pointer;
+}
+
+.menu ul li:hover {
+  color: #0038FF;
+  background-color: rgba(0, 0, 0, 0.05);
+  background-size: 30px 200px;
+  border-radius: 50px;
+}
+
+.speak_out {
+  background: #0038FF;
+  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);
+  color: #FFFFFF;
 }
 
 
@@ -188,19 +202,6 @@ main {
   filter: brightness(0.05);
 
 }
-
-.speak_out {
-  background: #0038FF;
-  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);
-  color: #FFFFFF;
-  padding: 10px;
-  margin: 0 0 0 -37px;
-}
-
-.menu_ul {
-  margin-bottom: 60px;
-}
-
 
 .nav__your_friends {
   position: fixed;

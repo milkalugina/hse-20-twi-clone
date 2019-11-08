@@ -4,6 +4,7 @@
 
 body {
   background-color: #E5E5E5;
+  background: 100vh;
   font-family: 'Fira Code', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,13 +21,14 @@ body {
   font-weight: bold;
   font-size: 20px;
   color: #000000;
-  margin-bottom: 32px;
+  margin-bottom: 27px;
 }
 
 .menu a {
   text-decoration: none;
   font-weight: bold;
   font-size: 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 .nav__icon {
@@ -233,7 +235,6 @@ main {
   font-size: 14px;
   line-height: 18px;
   text-align: left;
-  padding: 5px;
 }
 
 .nav__your_friends ul li {
@@ -249,7 +250,6 @@ main {
 
 .nav__your_friends ul li div {
   display: flex;
-  align-items: center;
   flex-direction: column;
   text-align: left;
 }

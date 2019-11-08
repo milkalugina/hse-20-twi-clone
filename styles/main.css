@@ -3,6 +3,7 @@
 
 
 body {
+  box-sizing: border-box;
   background-color: #E5E5E5;
   background: 100vh;
   font-family: 'Fira Code', monospace;
@@ -14,7 +15,7 @@ body {
 
 .menu {
   position: fixed;
-  left: calc((100vw - 900px)/2);
+  left: calc((100vw - 600px)/2);
   transform: translateX(-100%);
   padding: 24px 32px 0 0;
 }
@@ -37,6 +38,10 @@ body {
   font-size: 20px;
   padding: 10px 20px 10px 20px;
   margin-left: 20px;
+}
+
+.nav__btn__icn {
+  display: none;
 }
 
 .nav__icon {
@@ -254,3 +259,99 @@ main {
   flex-direction: column;
   text-align: left;
 }
+
+
+@media (max-width:1024px) {
+
+  .menu {
+    padding: 0;
+    left: calc((100vw - 850px)/2);
+  }
+
+  .nav__menu__text {
+    display: none;
+  }
+
+  .menu a{
+    margin-left: 10px;
+
+  }
+
+  .speak_out {
+    display: flex;
+    border-radius: 32px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding:0 !important;
+    display: inline-block;
+  }
+
+  .nav__btn__icn {
+    display: block;
+    background-image: url(../img/new-tweet.svg);
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+  }
+  .nav__btn__text {
+    display: none;
+  }
+
+  .nav__your_friends {
+    right: calc(25vw - 450px);
+  }
+
+  main {
+    margin: 0 100px;
+  }
+}
+
+@media (max-width:768px) {
+
+  .menu {
+    padding: 0;
+    left: calc((100vw - 600px)/2);
+  }
+
+  .nav__menu__text {
+    display: none;
+  }
+
+  .menu a{
+    margin-left: 10px;
+
+  }
+
+  .speak_out {
+    display: flex;
+    border-radius: 32px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding:0 !important;
+    display: inline-block;
+  }
+
+  .nav__btn__icn {
+    display: block;
+    background-image: url(../img/new-tweet.svg);
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+  }
+  .nav__btn__text {
+    display: none;
+  }
+
+  .nav__your_friends {
+    display: none;
+  }
+
+  main {
+    margin: 0 100px;
+  }
+
+}
+
+@media (max-width:320px)

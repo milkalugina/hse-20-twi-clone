@@ -114,6 +114,10 @@ body {
   margin-left: 20px;
 }
 
+.speak_out_mobile {
+  display: none;
+}
+
 
 /* MAIN */
 
@@ -276,19 +280,14 @@ main {
     display: none;
   }
 
-  .menu a{
-    margin-left: 10px;
-
-  }
 
   .speak_out {
-    display: flex;
+    display: inline-block;
     border-radius: 32px;
     align-items: center;
     justify-content: center;
     box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
     padding:0 !important;
-    display: inline-block;
   }
 
   .nav__btn__icn {
@@ -298,6 +297,7 @@ main {
     height: 20px;
     margin: 10px;
   }
+
   .nav__btn__text {
     display: none;
   }
@@ -327,16 +327,6 @@ main {
   .menu a{
     margin-left: 10px;
 
-  }
-
-  .speak_out {
-    display: flex;
-    border-radius: 32px;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
-    padding:0 !important;
-    display: inline-block;
   }
 
   .nav__btn__icn {
@@ -391,7 +381,7 @@ main {
 
   .menu ul li {
     display: inline;
-    padding: 0px 20px 11px 20px;
+    padding: 0px 20px 8px 20px;
   }
 
   .li__home {
@@ -403,23 +393,35 @@ main {
   }
 
   .speak_out {
-    display: flex;
-    border-radius: 32px;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
-    padding:0 !important;
+    display: none;
+  }
+
+  .speak_out_mobile {
     display: inline-block;
+    border-radius: 32px;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: #0038FF;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
   }
 
 
-  .nav__btn__icn {
+  .nav__btn__icn_mobile {
     display: block;
     background-image: url(../img/new-tweet.svg);
-    width: 20px;
-    height: 20px;
-    margin: 10px;
+    width: 56px;
+    height: 56px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35px;
   }
+
+  .nav__btn__text {
+    display: none;
+  }
+
 
   .nav__btn__text {
     display: none;
@@ -459,12 +461,24 @@ main {
     display: none;
   }
 
+  .story {
+    padding: 16px 16px 12px 16px;
+  }
+
   .story__body__actions {
     margin: 0;
+  }
+  .story__body__header * {
+    margin-right: 0;
+  }
+
+  .story__body__header {
+    align-items: normal;
   }
 
   .story__body__header h3 {
     display: flex;
+
   }
 
   .story__body__actions__item {
@@ -473,15 +487,23 @@ main {
 
   .story__body p {
     padding-bottom: 15px;
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 0;
   }
 
   .story__user-ava {
     width: 40px;
     height: 40px;
+    margin-right: 8px;
   }
 
   .story__body__header {
     flex-direction: column;
+  }
+
+  .story__body__header div {
+    padding: 5px 0 5px 0;
   }
 
 }

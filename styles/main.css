@@ -32,13 +32,6 @@ body {
   padding: 20px;
 }
 
-.menu a {
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  margin-left: 20px;
-}
 
 .nav__btn__icn {
   display: none;
@@ -114,6 +107,11 @@ body {
   background: #0038FF;
   box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);
   color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  margin-left: 20px;
 }
 
 
@@ -383,9 +381,6 @@ main {
     display: none;
   }
 
-  .menu a{
-    display: none;
-  }
 
   .menu ul {
     display: block;
@@ -408,17 +403,6 @@ main {
   }
 
   .speak_out {
-    display: none;
-  }
-
-  .speak_out__mobile {
-
-    display: block;
-    background-image: url(../img/new-tweet.svg);
-    width: 20px;
-    height: 20px;
-    margin: 10px;
-
     display: flex;
     border-radius: 32px;
     align-items: center;
@@ -427,6 +411,7 @@ main {
     padding:0 !important;
     display: inline-block;
   }
+
 
   .nav__btn__icn {
     display: block;
@@ -472,10 +457,6 @@ main {
 
   .main__header img {
     display: none;
-  }
-
-  .story {
-    display: block;
   }
 
   .story__body__actions {

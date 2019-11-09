@@ -135,9 +135,13 @@ main {
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
-.main__header h2 {
+.main__header__h2 {
   font-weight: bold;
   font-size: 20px;
+}
+
+.main__header__h2_mobile {
+  display: none;
 }
 
 .story {
@@ -260,12 +264,14 @@ main {
   text-align: left;
 }
 
+/* Размер 1024px */
 
 @media (max-width:1024px) {
 
   .menu {
     padding: 0;
     left: calc((100vw - 850px)/2);
+
   }
 
   .nav__menu__text {
@@ -306,6 +312,8 @@ main {
     margin: 0 100px;
   }
 }
+
+/* Размер 768px */
 
 @media (max-width:768px) {
 
@@ -354,4 +362,145 @@ main {
 
 }
 
-@media (max-width:320px)
+/* Размер 320px */
+
+@media (max-width:320px) {
+
+  /* меню */
+
+  .menu {
+    width: 320px;
+    height: 86px;
+    padding: 0;
+    left: calc(100vw - 0px);
+    margin: 0;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    z-index: 100;
+  }
+
+  .nav__menu__text {
+    display: none;
+  }
+
+  .menu a{
+    display: none;
+  }
+
+  .menu ul {
+    display: block;
+    margin-bottom: 0;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .menu ul li {
+    display: inline;
+    padding: 0px 20px 11px 20px;
+  }
+
+  .li__home {
+    border-bottom: 2px solid #0038FF !important;
+  }
+
+  .nav__icon--home {
+    background-color: #0038FF;
+  }
+
+  .speak_out {
+    display: none;
+  }
+
+  .speak_out__mobile {
+
+    display: block;
+    background-image: url(../img/new-tweet.svg);
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+
+    display: flex;
+    border-radius: 32px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding:0 !important;
+    display: inline-block;
+  }
+
+  .nav__btn__icn {
+    display: block;
+    background-image: url(../img/new-tweet.svg);
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+  }
+
+  .nav__btn__text {
+    display: none;
+  }
+
+  .nav__your_friends {
+    display: none;
+  }
+
+
+  main {
+    display: inline-block;
+    align-items:baseline;
+    width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    border: none;
+  }
+
+  .main__header{
+    display: flex;
+    padding-bottom: 70px;
+  }
+  .main__header__h2 {
+    display: none;
+  }
+
+  .main__header__h2_mobile {
+    display: flex;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 15px 0px 0px 30px;
+  }
+
+  .main__header img {
+    display: none;
+  }
+
+  .story {
+    display: block;
+  }
+
+  .story__body__actions {
+    margin: 0;
+  }
+
+  .story__body__header h3 {
+    display: flex;
+  }
+
+  .story__body__actions__item {
+    position: relative;
+  }
+
+  .story__body p {
+    padding-bottom: 15px;
+  }
+
+  .story__user-ava {
+    width: 40px;
+    height: 40px;
+  }
+
+  .story__body__header {
+    flex-direction: column;
+  }
+
+}

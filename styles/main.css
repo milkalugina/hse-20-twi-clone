@@ -103,6 +103,12 @@ body {
   border-radius: 50px;
 }
 
+.menu ul li div a {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
 .speak_out {
   background: #0038FF;
   box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);
